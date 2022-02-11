@@ -24,8 +24,6 @@ class Board {
           stateRandom = ' . ';
         }
         board[i][j] = stateRandom;
-
-        /* let cell = new Celula(posx, posy, stateRandom, vecinos) */
       }
     }
 
