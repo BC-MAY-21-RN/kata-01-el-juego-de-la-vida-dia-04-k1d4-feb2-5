@@ -1,5 +1,3 @@
-const Cell = require('./Cell');
-
 class Board {
   constructor(columns, rows) {
     this.columns = columns;
