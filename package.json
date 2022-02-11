@@ -1,0 +1,26 @@
+{
+  "name": "kata-01-el-juego-de-la-vida-dia-04-k1d4-feb2-5",
+  "version": "1.0.0",
+  "description": "![BrightCoders Logo](img/logo-bc.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BC-MAY-21-RN/kata-01-el-juego-de-la-vida-dia-04-k1d4-feb2-5.git"
+  },
+  "keywords": [],
+  "author": "jonathan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BC-MAY-21-RN/kata-01-el-juego-de-la-vida-dia-04-k1d4-feb2-5/issues"
+  },
+  "homepage": "https://github.com/BC-MAY-21-RN/kata-01-el-juego-de-la-vida-dia-04-k1d4-feb2-5#readme",
+  "devDependencies": {
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "jest": "^27.5.1"
+  }
+}
