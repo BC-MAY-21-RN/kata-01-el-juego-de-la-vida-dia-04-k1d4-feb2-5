@@ -15,7 +15,7 @@ describe('Test on the class Board', () => {
     expect(board.createBoard()).toHaveLength(columns);
   });
 
-  test('the row must have n cols', () => {
+  test('the row must have n rows', () => {
     board.createBoard().forEach((row) => {
       expect(row).toHaveLength(rows);
     });
