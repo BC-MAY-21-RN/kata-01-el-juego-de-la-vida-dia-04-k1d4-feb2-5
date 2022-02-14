@@ -13,13 +13,6 @@ class Cell {
   getPosY() {
     return this.posY;
   }
-
-
-
-
-
-
-
 }
 
 module.exports = Cell;

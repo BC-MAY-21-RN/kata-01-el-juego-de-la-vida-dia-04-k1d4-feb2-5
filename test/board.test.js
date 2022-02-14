@@ -1,7 +1,6 @@
 const Board = require('../Board');
 
 describe('Test on the class Board', () => {
-
   const columns = 8;
   const rows = 4;
 
@@ -21,5 +20,3 @@ describe('Test on the class Board', () => {
     });
   });
 });
-
-
