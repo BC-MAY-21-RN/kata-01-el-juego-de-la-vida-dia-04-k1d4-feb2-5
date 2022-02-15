@@ -74,7 +74,7 @@ class Board {
         }
 
         // diagonal izquierda arriba
-        if (limitLeft >= 0 && limitTop >= 0) {
+        if (limitLeft >= 0 && limitLeft < this.columns && limitTop >= 0) {
           if (board[limitLeft][limitTop] === ' * ') {
             contarvecino += contarvecino;
           }
@@ -117,18 +117,14 @@ class Board {
           }
         }
         // diagonal derecha abajo
-        if (
-          limitRight >= 0
-          && limitRight <= this.columns
-          && limitBottom >= 0
-          && limitBottom <= this.rows
-        ) {
+        if ((limitRight >= 0 && limitRight <= this.columns) && (limitBottom >= 0
+          && limitBottom <= this.rows)) {
           contarvecino += contarvecino;
         }
         // 1. Cualquier célula viva con menos de dos vecinas vivas muere,
         // como si la causa fuera la subpoblación.
         // 3. Cualquier celda viva con dos o tres vecinos vivos vive en la próxima generación.
-        if (board[x][y] === ' * ') {
+        /* if (board[x][y] === ' * ') {
           if (contarvecino === 2 || contarvecino === 3) {
             board[x][y] = ' * ';
           } else {
@@ -139,6 +135,24 @@ class Board {
           if (contarvecino === 3) {
             board[x][y] = ' * ';
           }
+        } */
+        switch (board[x][y]) {
+          case ' * ':
+            if (contarvecino === 2 || contarvecino === 3) {
+              board[x][y] = ' * ';
+            } else {
+              board[x][y] = ' . ';
+            }
+            break;
+
+          case ' . ':
+            if (contarvecino === 3) {
+              board[x][y] = ' * ';
+            }
+            break;
+          default:
+            console.log('No hay vecinos');
+            break;
         }
       }
     }
